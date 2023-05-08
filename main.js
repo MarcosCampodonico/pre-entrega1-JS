@@ -29,20 +29,22 @@ if(bien == "producto nacional"){
     alert("Producto fuera de comercializacion")*/
 //}
 //ejercicio de ciclo for
-/*for(let i = 1;i<=10;i++){
+for(let i = 1;i<=10;i++){
     let nombre1=prompt("ingrese su nombre")
     let ape=prompt("ingrese su apellido")
     let edad=parseInt(prompt("ingrese su edad"))
     let genero=prompt("ingrese su genero")
-    if(genero =="femenino"){
-        alert(`srta. ${nombre1} ${ape} usted tiene el turno n° ${i} en el edificio F`)
+    if(genero !="femenino" && "masculino"){
+        alert(`Dato erroneo vuelva a ingresar su genero`)
     }else if(genero=="masculino"){
         alert(`sr. ${nombre1} ${ape} usted tiene el turno n° ${i} en el edificio M`)
-    } else{
-        alert("No tiene genero identificado")
+    } else if(genero=="femenino"){
+        alert(`srta. ${nombre1} ${ape} usted tiene el turno n° ${i} en el edificio M`)
+    }else{
+        alert("no tiene un genero identificado, vuelva a cargar los datos")
     }
-}*/
-const resta = (a,b) => a-b;
+}
+/*const resta = (a,b) => a-b;
 let añoActual =parseInt(prompt("ingrese el año que transcurre"))
 let fechaNacimiento= parseInt(prompt("ingrese la fecha de nacimiento"))
 let edad=resta(añoActual,fechaNacimiento)
@@ -54,4 +56,4 @@ if(edad<18){
 
     }else{
     alert(`Usted tiene ${edad} años, esta en la edad jubilatoria`)
-}
+}*/
